@@ -80,7 +80,7 @@ public class StreamsDemo {
         lines.close();
         pub_lines.forEach(x -> System.out.println(x));
 
-        // read from csv
+        // read from csv file
         Stream<String> rows = Files.lines(Paths.get("src/main/resources/data.csv"));
         int rowCount = (int) rows
                 .map(x -> x.split(","))
